@@ -1,5 +1,5 @@
 # generated: 2026-05-03T20:34:01+07:00
-# last_updated: 2026-05-03T20:51:24+07:00
+# last_updated: 2026-05-03T20:57:32+07:00
 # project: suachua
 # project_key: NOKEY
 # tracking_system: file-system
@@ -35,7 +35,7 @@
 # - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
 
 generated: 2026-05-03T20:34:01+07:00
-last_updated: 2026-05-03T20:51:24+07:00
+last_updated: 2026-05-03T20:57:32+07:00
 project: suachua
 project_key: NOKEY
 tracking_system: file-system
@@ -43,7 +43,7 @@ story_location: _bmad-output/implementation-artifacts
 
 development_status:
   epic-1: in-progress
-  1-1-khoi-tao-nen-tang-ung-dung-accountless-intake: ready-for-dev
+  1-1-khoi-tao-nen-tang-ung-dung-accountless-intake: in-progress
   1-2-trang-goi-dich-vu-cong-khai-va-ranh-gioi-an-toan: ready-for-dev
   1-3-tao-case-khong-can-tai-khoan-voi-lien-he-va-case-id: ready-for-dev
   1-4-chon-loai-dich-vu-nen-tang-va-basic-self-check-kit: ready-for-dev
