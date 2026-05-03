@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Directions - suachua</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-6xl mx-auto space-y-12">
+        <header class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-gray-900">Visual Design Directions: suachua</h1>
+            <p class="text-gray-600 mt-2">So sánh các định hướng thiết kế cho Báo cáo Chẩn đoán (Triage Report)</p>
+        </header>
+
+        <!-- Direction 1: Clinical Lab -->
+        <section class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+            <h2 class="text-xl font-bold text-slate-800 border-b pb-2 mb-6">Direction 1: The "Clinical Lab" (Light Mode - Mặc định)</h2>
+            <div class="bg-slate-50 p-6 rounded-lg border border-slate-100">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-slate-900">Báo cáo Chẩn đoán #12345</h3>
+                    <span class="px-3 py-1 bg-rose-100 text-rose-700 rounded-full text-sm font-medium flex items-center gap-1">
+                        ⚠️ Lỗi Phần Cứng
+                    </span>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div class="bg-white p-4 rounded-md shadow-sm border border-slate-100">
+                        <p class="text-sm text-slate-500 mb-1">Tình trạng hiện tại</p>
+                        <p class="font-medium text-slate-900">ESC cháy FET số 3, Motor #4 kẹt bi.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-md shadow-sm border border-slate-100">
+                        <p class="text-sm text-slate-500 mb-1">Phương án xử lý</p>
+                        <p class="font-medium text-emerald-600">Thay thế ESC 45A, vệ sinh Motor.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-900 text-slate-300 p-4 rounded-md font-mono text-sm overflow-x-auto">
+                    > DSHOT error count: 1540<br>
+                    > Motor 4 sync loss detected at 10:24:11
+                </div>
+                <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors">
+                    Xác nhận Sửa chữa
+                </button>
+            </div>
+            <p class="mt-4 text-sm text-gray-500">Focus: Rất sạch sẽ, thân thiện với người dùng phổ thông. Độ tương phản cao.</p>
+        </section>
+
+        <!-- Direction 2: Pro Engineering -->
+        <section class="bg-slate-950 p-8 rounded-xl shadow-lg border border-slate-800">
+            <h2 class="text-xl font-bold text-slate-100 border-b border-slate-800 pb-2 mb-6">Direction 2: The "Pro Engineering" (Dark Mode)</h2>
+            <div class="bg-slate-900 p-6 rounded-lg border border-slate-800">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-slate-100">Báo cáo Chẩn đoán #12345</h3>
+                    <span class="px-3 py-1 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-full text-sm font-medium flex items-center gap-1">
+                        ⚠️ Lỗi Phần Cứng
+                    </span>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div class="bg-slate-800/50 p-4 rounded-md border border-slate-700">
+                        <p class="text-sm text-slate-400 mb-1">Tình trạng hiện tại</p>
+                        <p class="font-medium text-slate-200">ESC cháy FET số 3, Motor #4 kẹt bi.</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-4 rounded-md border border-slate-700">
+                        <p class="text-sm text-slate-400 mb-1">Phương án xử lý</p>
+                        <p class="font-medium text-emerald-400">Thay thế ESC 45A, vệ sinh Motor.</p>
+                    </div>
+                </div>
+                <div class="bg-black/50 text-emerald-400 p-4 rounded-md font-mono text-sm overflow-x-auto border border-slate-800">
+                    > DSHOT error count: 1540<br>
+                    > Motor 4 sync loss detected at 10:24:11
+                </div>
+                <button class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition-colors">
+                    Xác nhận Sửa chữa
+                </button>
+            </div>
+            <p class="mt-4 text-sm text-slate-400">Focus: Giảm mỏi mắt khi xem thông số, mang lại cảm giác "hacker/kỹ sư chuyên nghiệp".</p>
+        </section>
+
+    </div>
+</body>
+</html>

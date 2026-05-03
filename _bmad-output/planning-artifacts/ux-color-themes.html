@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suachua - UX Color Themes Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold mb-2">suachua Color Themes Visualizer</h1>
+        <p class="text-gray-600 mb-10">Bản mô phỏng trực quan ngôn ngữ thiết kế: Clinical Lab (Light) và Pro Engineering (Dark).</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <!-- CLINICAL LAB (LIGHT MODE) -->
+            <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+                <h2 class="text-2xl font-bold mb-6 text-slate-900">Clinical Lab (Light Mode)</h2>
+                <p class="text-slate-600 mb-8 text-sm">Trạng thái mặc định cho Landing Page và Luồng Tiếp nhận. Tập trung vào sự sạch sẽ, an toàn và minh bạch.</p>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Primary & Background</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-blue-900 shadow-inner mb-2 border border-gray-100"></div>
+                                <span class="text-xs font-medium">Deep Blue</span>
+                                <span class="text-[10px] text-gray-500 mono">#1E3A8A</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-slate-900 shadow-inner mb-2 border border-gray-100"></div>
+                                <span class="text-xs font-medium">Slate 900</span>
+                                <span class="text-[10px] text-gray-500 mono">#0F172A</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-gray-50 shadow-inner mb-2 border border-gray-200"></div>
+                                <span class="text-xs font-medium">Bg Gray</span>
+                                <span class="text-[10px] text-gray-500 mono">#F9FAFB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Semantic Colors</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-emerald-500 shadow-inner mb-2"></div>
+                                <span class="text-xs font-medium">Success</span>
+                                <span class="text-[10px] text-gray-500 mono">#10B981</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-amber-500 shadow-inner mb-2"></div>
+                                <span class="text-xs font-medium">Warning</span>
+                                <span class="text-[10px] text-gray-500 mono">#F59E0B</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-rose-500 shadow-inner mb-2"></div>
+                                <span class="text-xs font-medium">Error</span>
+                                <span class="text-[10px] text-gray-500 mono">#F43F5E</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-5 bg-gray-50 rounded-lg border border-gray-100">
+                        <h3 class="text-sm font-bold text-slate-800 mb-2">Demo Component: Báo giá (Light)</h3>
+                        <div class="bg-white p-4 rounded-md shadow-sm border border-gray-200">
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="text-slate-600 font-medium">Thay thế ESC 4in1</span>
+                                <span class="font-bold text-slate-900">850,000đ</span>
+                            </div>
+                            <button class="w-full bg-emerald-500 text-white font-medium py-2 rounded-md hover:bg-emerald-600 transition">Xác nhận Sửa chữa</button>
+                            <div class="mt-3 text-center">
+                                <a href="#" class="text-xs text-gray-500 underline hover:text-gray-700">Không sửa nữa, trả máy cho tôi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRO ENGINEERING (DARK MODE) -->
+            <div class="bg-slate-950 border border-slate-800 rounded-xl p-8 shadow-lg text-slate-200">
+                <h2 class="text-2xl font-bold mb-6 text-white">Pro Engineering (Dark Mode)</h2>
+                <p class="text-slate-400 mb-8 text-sm">Giao diện chuyên sâu dành cho Triage Report và Dashboard. Giúp người dùng đọc log Blackbox không mỏi mắt.</p>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Primary & Background</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-slate-950 shadow-inner mb-2 border border-slate-800"></div>
+                                <span class="text-xs font-medium text-slate-300">Base Dark</span>
+                                <span class="text-[10px] text-slate-500 mono">#020617</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-slate-900 shadow-inner mb-2 border border-slate-700"></div>
+                                <span class="text-xs font-medium text-slate-300">Card Dark</span>
+                                <span class="text-[10px] text-slate-500 mono">#0F172A</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-blue-500 shadow-inner mb-2"></div>
+                                <span class="text-xs font-medium text-slate-300">Accent Blue</span>
+                                <span class="text-[10px] text-slate-500 mono">#3B82F6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Semantic Colors</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-emerald-400 shadow-inner mb-2"></div>
+                                <span class="text-xs font-medium text-slate-300">Success</span>
+                                <span class="text-[10px] text-slate-500 mono">#34D399</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-amber-400 shadow-inner mb-2"></div>
+                                <span class="text-xs font-medium text-slate-300">Warning</span>
+                                <span class="text-[10px] text-slate-500 mono">#FBBF24</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-16 h-16 rounded-full bg-rose-400 shadow-inner mb-2"></div>
+                                <span class="text-xs font-medium text-slate-300">Error</span>
+                                <span class="text-[10px] text-slate-500 mono">#FB7185</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-5 bg-slate-900 rounded-lg border border-slate-800">
+                        <h3 class="text-sm font-bold text-white mb-2">Demo Component: Raw Log (Dark)</h3>
+                        <div class="bg-black p-4 rounded-md border border-slate-800">
+                            <div class="flex items-center gap-2 mb-2">
+                                <div class="w-2 h-2 rounded-full bg-rose-500"></div>
+                                <span class="text-xs font-bold text-rose-400 uppercase tracking-wider">Desync Detected</span>
+                            </div>
+                            <p class="mono text-xs text-slate-400 leading-relaxed">
+                                ERROR [04:22:19.45]: Motor 3 stalled.<br>
+                                > PID_SUM: 100% | GYRO_YAW: -450 deg/s<br>
+                                > Recommend: Inspect ESC / Check motor bells.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

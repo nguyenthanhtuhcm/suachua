@@ -1,0 +1,85 @@
+# generated: 2026-05-03T20:34:01+07:00
+# last_updated: 2026-05-03T20:51:24+07:00
+# project: suachua
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog -> in-progress: Automatically when first story is created (via create-story)
+#   - in-progress -> done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - Developer typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-05-03T20:34:01+07:00
+last_updated: 2026-05-03T20:51:24+07:00
+project: suachua
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  epic-1: in-progress
+  1-1-khoi-tao-nen-tang-ung-dung-accountless-intake: ready-for-dev
+  1-2-trang-goi-dich-vu-cong-khai-va-ranh-gioi-an-toan: ready-for-dev
+  1-3-tao-case-khong-can-tai-khoan-voi-lien-he-va-case-id: ready-for-dev
+  1-4-chon-loai-dich-vu-nen-tang-va-basic-self-check-kit: ready-for-dev
+  1-5-ghi-nhan-consent-retention-va-ranh-gioi-du-lieu: ready-for-dev
+  1-6-upload-evidence-truc-tiep-voi-tien-trinh-resumable: ready-for-dev
+  1-7-bo-sung-evidence-vao-case-hien-co-va-xem-intake-tracker: ready-for-dev
+  epic-1-retrospective: optional
+  epic-2: in-progress
+  2-1-state-machine-va-kiem-thu-chuyen-trang-thai-case: ready-for-dev
+  2-2-dashboard-queue-case-noi-bo: ready-for-dev
+  2-3-phan-loai-case-va-truong-rui-ro: ready-for-dev
+  2-4-workflow-missing-info-va-yeu-cau-bo-sung-evidence: ready-for-dev
+  2-5-theo-doi-sla-va-case-sap-qua-han: ready-for-dev
+  2-6-compliance-gate-va-co-do-not-fly: ready-for-dev
+  2-7-activity-record-va-metadata-exportable: ready-for-dev
+  epic-2-retrospective: optional
+  epic-3: in-progress
+  3-1-tao-triage-report-cho-case-basic: ready-for-dev
+  3-2-confidence-level-risk-level-va-phan-loai-ket-luan: ready-for-dev
+  3-3-safety-disclaimer-va-evidence-threshold-cho-khuyen-nghi-bay-thu: ready-for-dev
+  3-4-customer-report-status-page-voi-4-truong-bat-buoc: ready-for-dev
+  3-5-decision-cta-va-upsell-tu-report: ready-for-dev
+  3-6-dataset-quality-report-va-ranh-gioi-webodm: ready-for-dev
+  3-7-giao-dien-report-clinical-lab-dark-mode-va-accessibility: ready-for-dev
+  epic-3-retrospective: optional
+  epic-4: in-progress
+  4-1-chuyen-case-vuot-scope-sang-partner: ready-for-dev
+  4-2-kiem-tra-consent-truoc-khi-chia-se-du-lieu-referral: ready-for-dev
+  4-3-tao-referral-package-co-ranh-gioi-du-lieu-ro: ready-for-dev
+  4-4-data-retention-va-dong-case-theo-policy: ready-for-dev
+  epic-4-retrospective: optional
+  epic-5: in-progress
+  5-1-danh-dau-case-phu-hop-cho-failure-library: ready-for-dev
+  5-2-chuyen-case-private-thanh-muc-failure-library-da-an-danh: ready-for-dev
+  5-3-phan-loai-va-hien-thi-failure-library-public: ready-for-dev
+  5-4-dang-ky-workshop-lab-tu-failure-case: ready-for-dev
+  5-5-lien-ket-case-that-voi-checklist-lab-exercise-va-assessment: ready-for-dev
+  5-6-pilot-metrics-va-conversion-tracking-cho-mvp-90-ngay: ready-for-dev
+  epic-5-retrospective: optional
