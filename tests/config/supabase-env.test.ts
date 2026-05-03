@@ -17,4 +17,31 @@ describe("supabase environment validation", () => {
       "Supabase environment variables are not configured correctly",
     );
   });
+
+  it("reads the public Supabase values from process.env by default", () => {
+    const originalUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const originalAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+    try {
+      process.env.NEXT_PUBLIC_SUPABASE_URL = "https://default.supabase.co";
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = "default-anon-key";
+
+      expect(readSupabaseEnv()).toEqual({
+        NEXT_PUBLIC_SUPABASE_URL: "https://default.supabase.co",
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: "default-anon-key",
+      });
+    } finally {
+      if (typeof originalUrl === "undefined") {
+        delete process.env.NEXT_PUBLIC_SUPABASE_URL;
+      } else {
+        process.env.NEXT_PUBLIC_SUPABASE_URL = originalUrl;
+      }
+
+      if (typeof originalAnonKey === "undefined") {
+        delete process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      } else {
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = originalAnonKey;
+      }
+    }
+  });
 });

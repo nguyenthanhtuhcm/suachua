@@ -8,11 +8,16 @@ export const supabaseEnvSchema = z.object({
 export type SupabaseEnv = z.infer<typeof supabaseEnvSchema>;
 
 export function readSupabaseEnv(
-  source: Record<string, string | undefined> = process.env,
+  source?: Record<string, string | undefined>,
 ): SupabaseEnv {
+  const env = source ?? {
+    NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+  };
+
   const parsed = supabaseEnvSchema.safeParse({
-    NEXT_PUBLIC_SUPABASE_URL: source.NEXT_PUBLIC_SUPABASE_URL,
-    NEXT_PUBLIC_SUPABASE_ANON_KEY: source.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    NEXT_PUBLIC_SUPABASE_URL: env.NEXT_PUBLIC_SUPABASE_URL,
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
   });
 
   if (!parsed.success) {
